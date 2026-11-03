@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="#000000">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Convertisseur de devises" android:textColor="#FF8A25" android:textSize="24sp" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Mode hors ligne : saisissez votre taux de change. Aucun taux en direct." android:textColor="#CCCCCC" />
+<EditText android:id="@+id/amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:hint="Montant" android:textColor="#FFFFFF" android:textColorHint="#AAAAAA" android:backgroundTint="#FF8A25" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="De" android:textColor="#FFFFFF" />
+<Spinner android:id="@+id/fromCurrency" android:layout_width="match_parent" android:layout_height="52dp" android:backgroundTint="#FF8A25" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vers" android:textColor="#FFFFFF" />
+<Spinner android:id="@+id/toCurrency" android:layout_width="match_parent" android:layout_height="52dp" android:backgroundTint="#FF8A25" />
+<TextView android:id="@+id/rateLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+<EditText android:id="@+id/rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:hint="Taux de conversion" android:textColor="#FFFFFF" android:textColorHint="#AAAAAA" android:backgroundTint="#FF8A25" />
+<Button android:id="@+id/convert" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Convertir" android:textColor="#FFFFFF" android:backgroundTint="#FF6D00" />
+<TextView android:id="@+id/conversionResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:textColor="#FFFFFF" android:textSize="28sp" />
+</LinearLayout></ScrollView>
